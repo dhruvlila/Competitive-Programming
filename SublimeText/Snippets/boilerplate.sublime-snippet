@@ -1,0 +1,40 @@
+<snippet>
+  <content><![CDATA[
+#include <bits/stdc++.h>
+
+using namespace std;
+
+typedef long long ll;
+typedef long double ld;
+ 
+#define push push_back
+#define pop pop_back
+
+void solve();
+
+int main(){
+
+   ios_base::sync_with_stdio(false);
+   cin.tie(NULL);
+   ll T;
+   cin >> T;
+
+   while(T--){
+      solve();
+   }
+
+   return 0;
+
+}
+
+void solve(){
+
+   
+
+}
+]]></content>
+  <tabTrigger>boilerplate</tabTrigger>
+  <description>Boilerplate</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>
