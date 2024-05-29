@@ -1,0 +1,29 @@
+<snippet>
+  <content><![CDATA[
+/*
+STRING HELP:
+1. Length of a string: s.length()
+2. Sorting a string in ascending: sort(s.begin(), s.end())
+   Sorting a string in descending:sort(s.rbegin(), s.rend())
+3. Swapping two strings: s.swap(x)
+4. Checking if string is empty (0/1): s.empty()
+5. Clearing a string: s.clear()
+6. Reversing a string : reverse(s.begin(), s.end())
+7. Inserting a string: s.insert(index, x)
+                       s.insert(itr_position, no.oftimes, 'char')
+                       s.insert(itr_position, x.begin(), x.end())
+8. Erasing from a string: s.erase(idx) [Everything with index >=idx is removed]
+                          s.erase(itr_position) [That particular character is removed]
+                          s.erase(itr_pos1, itr_pos2) [Everything in between excluding pos2]
+9. Substring: s.substr(idx, length) [Everything after idx upto length]
+              s.substr(idx) [Everything after idx]
+10. Finding in a string: auto it = s.find(str/char) [it == index]
+                         it == string::npos if not present
+11. Replace in a stirng: https://www.geeksforgeeks.org/std-string-replace-in-cpp/
+*/
+]]></content>
+  <tabTrigger>helpstring</tabTrigger>
+  <description>String Help</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>
