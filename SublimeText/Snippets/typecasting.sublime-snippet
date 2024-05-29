@@ -1,0 +1,19 @@
+<snippet>
+  <content><![CDATA[
+/*
+TYPECASTING:
+1. string to int/ll/double/ld: stoi(s)/stoll(s)/stod(s)/stold(s) [Be carefull about range]
+   int/ll/double/ld to string: to_string(val)
+2. string to char: s[0] [lmao]
+   char to string: string s(1, 'char')
+3. ASCII TABLE:
+   '0' --> 48
+   'A' --> 65
+   'a' --> 97
+*/
+]]></content>
+  <tabTrigger>typecasting</tabTrigger>
+  <description>Typecasting</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>
