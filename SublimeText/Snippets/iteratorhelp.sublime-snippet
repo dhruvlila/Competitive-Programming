@@ -1,0 +1,17 @@
+<snippet>
+  <content><![CDATA[
+/*
+ITERATOR HELP:
+1. Declaring: vector <ll> :: iterator it = v.begin()
+2. -> Notation: (*it).first == it->first
+3. Iterating: for(it = v.begin(); it != v.end(); it++) [*it to access values]
+              for(auto it : v) [Copy is created]
+              for(auto &it : v) [Copy is created]
+*/
+
+]]></content>
+  <tabTrigger>helpiterator</tabTrigger>
+  <description>Iterator Help</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>
