@@ -6,6 +6,7 @@ using namespace std;
 
 typedef long long ll;
 typedef long double ld;
+typedef unsigned long long ull;
 typedef pair <ll, ll> pll;
 typedef vector <ll> vll;
  
@@ -47,3 +48,5 @@ void solve(){
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <!-- <scope >source.python</scope > -->
 </snippet>
+
+
