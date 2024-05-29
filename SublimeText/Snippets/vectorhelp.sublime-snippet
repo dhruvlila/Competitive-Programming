@@ -1,0 +1,25 @@
+<snippet>
+  <content><![CDATA[
+/*
+VECTOR HELP:
+1.) Size of a vector : v.size()
+2.) Sorting a vector in ascending: sort(v.begin(), v.end())
+    Sorting a vector in descending: sort(v.rbegin(), v.rend()) 
+3.) Swapping two vectors: v.swap(w)
+4.) Checking if vector is empty (0/1): v.empty()
+5.) Clearing a vector: v.clear()
+6.) Reversing a vector : reverse(v.begin(), v.end())
+7.) Inserting a element(s): v.insert(itr_position, val)
+                            v.insert(itr_position, size, val)
+                            v.insert(itr_position, w.begin(), w.end())
+8.) Erasing a element(s): v.erase(itr_position)
+                          v.erase(itr_pos1, itr_pos2)
+9.) Finding an element: auto it = find(v.begin(), v.end(), val)
+                        if(it == v.end()) ==> val is not present
+*/
+]]></content>
+  <tabTrigger>helpvector</tabTrigger>
+  <description>Vector Help</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>
