@@ -1,0 +1,27 @@
+<snippet>
+  <content><![CDATA[
+/*
+MAP HELP:
+1.) Size of a map : map.size()
+2.) Keeping a map in descending order: map<ll, ll, greater<ll>> 
+3.) Swapping two maps: m1.swap(m2)
+4.) Checking if map is empty (0/1): map.empty()
+5.) Clearing a map: map.clear()
+6.) Inserting an element: map[key] = value
+                          map.insert({key, value})
+                          map.insert(m.begin(), m.end())
+7.) Erasing elemnent(s): s.erase(key_val)
+                         s.erase(itr_position)
+                         s.erase(itr_pos1, itr_pos2)
+8.) Finding element: s.find(key_val) --> Returns iterator position
+                     s.count(key_val) --> Returns number of occurances of the key value
+9.) Bounds: s.lower_bound(key_val) --> points to a pair with key value >= key_val
+            s.upper_bound(key_val) --> points to a pait with key value > key_val
+(NOTE: Use your brain to figure out what functions work for unordered and multi maps.)
+*/
+]]></content>
+  <tabTrigger>helpmaps</tabTrigger>
+  <description>Maps Help</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>
