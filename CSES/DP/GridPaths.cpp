@@ -13,17 +13,6 @@ typedef vector <ll> vll;
  
 const ll MOD = 1e9 + 7;
  
-set <ll> f(ll n){
-   set <ll> s;
-   while(n != 0){
-      if(n % 10 != 0){
-         s.insert(n%10);
-      }
-      n /= 10;
-   }
-   return s;
-}
- 
 void solve();
  
 int main(){
@@ -52,29 +41,21 @@ void solve(){
       for(ll j = 0; j < n; j++){
          char c;
          cin >> c;
-         if(c == '.'){
-            obstacleGrid[i][j] = 0;
-         }
-         else{
-            obstacleGrid[i][j] = 1;
-         }
+         (c == '.') ? obstacleGrid[i][j] = 0 : obstacleGrid[i][j] = 1;
       }
    }
-   ll m = n;
-   vector <vector <ll>> dp(m+1, vector<ll>(n+1));
+
+   vector <vector <ll>> dp(n+1, vector<ll>(n+1));
    for(ll i = 0; i <= n; i++){
       dp[0][i] = 0;
    }
-   for(ll i = 0; i <= m; i++){
+   for(ll i = 0; i <= n; i++){
       dp[i][0] = 0;
    }
-   if(obstacleGrid[0][0] == 1){
-      dp[1][1] = 0;
-   }
-   else{
-      dp[1][1] = 1;
-   }
-   for(ll i = 1; i <= m; i++){
+ 
+   (obstacleGrid[0][0] == 1) ? (dp[1][1] = 0) : (dp[1][1] = 1);
+ 
+   for(ll i = 1; i <= n; i++){
       for(ll j = 1; j <= n; j++){
           if(!(i == 1 && j == 1)){
               if(obstacleGrid[i-1][j-1]){
