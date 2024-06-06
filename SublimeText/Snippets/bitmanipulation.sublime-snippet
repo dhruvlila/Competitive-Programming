@@ -1,0 +1,21 @@
+<snippet>
+  <content><![CDATA[
+/*
+BIT MANIPULATION TRICKS:
+1. Checking if x is odd: (x & 1)
+2. Checking if x is power of 2: !(x & (x-1))
+3. Check if kth bit is set: x & (1 << k)
+   Toggle kth bit: x ^ (1 << k)
+   Set kth bit: x | (1 << k)
+4. Multiplying by kth power of 2: x << k
+   Dividing by kth power of 2: x >> k
+   Modulo with kth power of 2: x & ((1<<k)-1)
+5. Swapping two numbers: x = x ^ y; y = x ^ y; x = x ^ y;
+6. Number of set bits in x = __builtin_popcount(x)
+*/
+]]></content>
+  <tabTrigger>bitmanipulation</tabTrigger>
+  <description>Bit Manipulation</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>
