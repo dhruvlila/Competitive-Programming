@@ -72,6 +72,27 @@ public:
       return false;
    }
 
+   // Cycle Detection in Directed graph.
+   bool dicycleCheck(vector <vll> &graph, vll &visited, ll i){
+
+      visited[i] = 2;
+      bool verdict = false;
+
+      for(auto &it : graph[i]){
+         if(!visited[it] && !verdict){
+            if(dfs(graph, visited, it) == true){
+               return true;
+            }
+         }
+         else if(visited[it] == 2){
+            return true;
+         }
+      }
+
+      visited[i] = 1;
+      return false;
+   }
+
 
 };
 
@@ -84,4 +105,3 @@ int main(){
    return 0;
 
 }
-
