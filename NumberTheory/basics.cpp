@@ -10,7 +10,7 @@ typedef vector <ll> vll;
 
 const ll MOD = 1e9 + 7;
 
-class Graphs{
+class NumberTheory{
 public:
 
    // Sieve of Eratosthenes to compute all primes from 1 --> n.
@@ -80,6 +80,45 @@ public:
          i /= sieve[i];
       }
       return map;
+   }
+
+   // Time Complexity: O(n^3)
+   vector <vll> matrixMult(vector <vll> A, vector <vll> B){
+      ll m = A.size();
+      ll n = A[0].size();
+      ll p = B[0].size();
+      vector <vll> C(m, vll(p));
+      for(ll i = 0; i < m; i++){
+         for(ll j = 0; j < p; j++){
+            ll sum = 0;
+            for(ll k = 0; k < n; k++){
+               sum += A[i][k]*B[k][j];
+            }
+            C[i][j] = sum;
+         }
+      }
+      return C;
+   }
+
+   // Time Complexity: O(n^3*log(pow))
+   vector <vll> matrixExpo(vector <vll> A, ll pow){
+      ll n = A.size();
+      vector <vll> I(n, vll(n, 0));
+      for(ll i = 0; i < n; i++){
+         for(ll j = 0; j < n; j++){
+            if(i == j){
+               I[i][j] = 1;
+            }
+         }
+      }
+      while(pow != 0){
+         if(pow&1){
+            I = matrixMult(I, A);
+         }
+         pow /= 2;
+         A = matrixMult(A, A);
+      }
+      return I;
    }
 
 
